@@ -1,0 +1,178 @@
+
+.top-header {
+    background-color: white;
+}
+
+.nav-margin {
+    padding: 15px 112px;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) ;
+    background-color: white;
+    
+}
+.margin {
+    padding: 0 90px;
+}
+.text-muted {
+    color: #768ea3 !important;
+}
+.font-weight-bold {
+    font-size: small;
+    font-weight: 500 !important;
+}
+
+.btn-outline-secondary {
+    padding: 8px 20px;
+    color: #768ea3;
+}
+
+.icons {
+    fill: rgba(117, 117, 117, 1);
+}
+
+.follow {
+    padding: 1px 8px !important;
+}
+.date-time{
+    color: gray;
+}
+.date {
+    color: gray;
+}
+.date:hover{
+    color: gray;
+    text-decoration: underline;
+}
+.name {
+    color: black;
+}
+
+.name:hover {
+    color: black;
+    text-decoration: underline;
+}
+/* .bold {
+    font-weight: bolder;
+} */
+
+a:hover {
+    text-decoration: none;
+}
+
+.text-green {
+    color: #029e74 !important;
+}
+
+.text-green:hover {
+    color: #06694f !important;
+}
+
+.nav-light {
+    color: #99adc0 !important;
+}
+
+.nav-light:hover {
+    color: white !important;
+}
+
+.btn:hover {
+    background-color: white;
+    color:  #768ea3;
+    border-color: #333c44;
+}
+.img {
+    padding-top: 10px;
+}
+.second-nav {
+    padding: 7px;
+    font-weight: 50;
+
+    background-color: #355876;
+    margin-top: 50px;
+
+}
+
+.body {
+    max-width: 100%;
+    margin: 1.5rem 10px;
+}
+
+.no-clamp{
+    white-space: nowrap;
+}
+
+.alert {
+    background-color: #f2f2f2;
+    max-width: 100%;
+    margin: 1.5rem 10px;
+    font-weight: 400;
+}
+.content {
+    flex-direction: column;
+}
+@media (min-width: 740px) {
+    .alert {
+        width: 740px; 
+        margin: 1.5rem auto;
+    }
+
+    .body {
+        max-width: 740px;
+        margin: 1.5rem auto;
+        padding: 15px;
+    }
+}
+@media (min-width: 600px) and (max-width: 1030px) {
+    .nav-margin {
+        padding: 15px 44px;
+    }
+
+    .margin {
+        padding: 10px 24px;
+    }
+
+    .nav-menu {
+        overflow-x: auto;
+    }
+
+    .second-nav {
+        padding: 5px;
+        margin-top: 0;
+    }
+}
+
+.avatar {
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+    margin-left: -52.5px;
+    margin-top: 4px;
+}
+
+.alg {
+    vertical-align: middle;
+}
+
+.design {
+    fill: rgba(3, 168, 124, 1);
+}
+
+@media (max-width: 600px) {
+    .nav-margin {
+        padding: 15px 44px;
+    }
+
+    .margin {
+        padding: 10px 24px;
+    }
+    .nav-menu {
+        display: none !important;
+    }
+    .second-nav {
+        padding: 5px;
+        margin-top: 0;
+    }
+    .alert {
+        flex-direction: column;
+    }
+}
+

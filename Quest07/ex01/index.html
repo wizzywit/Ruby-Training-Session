@@ -44,8 +44,8 @@
                         <a href="#" class="text-green"> &nbsp;Sign up and get an extra one for free</a>
                     </div>
                     <div class="body">
-                        <h1>10 Common Software Architectural Patterns in a nutshell</h1>
-                        <div class="d-flex mb-4">
+                        <h1 class="general-content header">10 Common Software Architectural Patterns in a nutshell</h1>
+                        <div class="d-flex mb-4 column-reverse">
                             <div class="d-flex justify-content-center align-items-center">
                                 <div class="p-2 d-flex">
                                     <div class="d-flex justify-content-center align-items-center design">
@@ -65,7 +65,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="ml-auto d-flex p-2 align-items-end">
+                            <div class="ml-auto d-flex p-2 align-items-end social-icon">
                                 <div>
                                     <a href="#">
                                         <svg width="29" height="29" class="icons"><path d="M22.05 7.54a4.47 4.47 0 0 0-3.3-1.46 4.53 4.53 0 0 0-4.53 4.53c0 .35.04.7.08 1.05A12.9 12.9 0 0 1 5 6.89a5.1 5.1 0 0 0-.65 2.26c.03 1.6.83 2.99 2.02 3.79a4.3 4.3 0 0 1-2.02-.57v.08a4.55 4.55 0 0 0 3.63 4.44c-.4.08-.8.13-1.21.16l-.81-.08a4.54 4.54 0 0 0 4.2 3.15 9.56 9.56 0 0 1-5.66 1.94l-1.05-.08c2 1.27 4.38 2.02 6.94 2.02 8.3 0 12.86-6.9 12.84-12.85.02-.24 0-.43 0-.65a8.68 8.68 0 0 0 2.26-2.34c-.82.38-1.7.62-2.6.72a4.37 4.37 0 0 0 1.95-2.51c-.84.53-1.81.9-2.83 1.13z"></path></svg>
@@ -88,11 +88,292 @@
                                 </div>
                             </div>
                         </div>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus vitae tenetur aut eaque officiis sint molestias odit fugiat, dolor totam ab harum ratione maxime veniam atque deleniti amet numquam repellendus!
-                        Quo sit quasi cumque, at voluptatum, tempore voluptate ab modi voluptatibus nemo rem cupiditate minus reiciendis eos iste dolore. Sequi praesentium quasi id quam optio, sed excepturi repudiandae commodi voluptatem!
-                        Iste repudiandae atque similique sit quasi, autem numquam libero rerum eveniet voluptatibus debitis, architecto iusto veniam fugiat reiciendis, ipsum odit qui at illo consequuntur error. Dolore ex id minima nostrum.
-                        Ducimus atque repellat labore eius eveniet excepturi sequi voluptatem, delectus error nemo commodi ad ipsa est dolore non, quaerat cumque velit? Libero at fuga quae sapiente maxime, temporibus minima maiores.
-                        Voluptatum, quidem commodi dolorum magni animi expedita rerum saepe iste aut neque, accusantium ea voluptate veritatis doloremque libero eaque. Quos qui in assumenda dignissimos accusantium sequi quisquam nihil non eos!
+                        <div class="d-flex flex-column">
+                                <div class="general-content text-content d-flex flex-column">
+                                    <p>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus vitae tenetur aut eaque officiis sint molestias odit fugiat, dolor totam ab harum ratione maxime veniam atque deleniti amet numquam repellendus!
+                                        Quo sit quasi cumque, at voluptatum, tempore voluptate ab modi voluptatibus nemo rem cupiditate minus reiciendis eos iste dolore. Sequi praesentium quasi id quam optio, sed excepturi 
+                                        Iste 
+                                    </p>
+                                    <img src="images/software.png" alt="Image for Post" class="general-images">
+                                </div>
+                                <h1 class="second-header">What is an Architectural Pattern?</h1>
+                                <p class="general-content text-content">
+                                    According to Wikipedia,
+                                </p>
+                                <p class=" general-content highlight-text text-content border-left pl-3">
+                                    <mark>
+                                        Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipisicing elit. Distinctio, culpa. Assumenda eaque nulla ipsa dolore, nobis fugiat eius vero, blanditiis, neque harum rem? Nobis, similique repudiandae mollitia consequatur vero non! lorem ipsum.
+                                    </mark>
+                                </p>
+                                <p class="general-content text-content">
+                                    In this article, I will be briefly explaining the following 10 common architectural patterns with their usage, pros and cons.
+                                </p>
+                                <ol class="general-content text-content list">
+                                    <li><strong class="item">Layered Pattern</strong></li>
+                                    <li><strong class="item">Client-server Pattern</strong></li>
+                                    <li><strong class="item">Master-slave Pattern</strong></li>
+                                    <li><strong class="item">Pipe-filter Pattern</strong></li>
+                                    <li><strong class="item">Broker Pattern</strong></li>
+                                    <li><strong class="item">Peer-to-peer Pattern</strong></li>
+                                    <li><strong class="item">Event-bus Pattern</strong></li>
+                                    <li><strong class="item">Model-view-controller Pattern</strong></li>
+                                    <li><strong class="item">Blackboard Pattern</strong></li>
+                                    <li><strong class="item">Interpreter Pattern</strong></li>
+                                </ol>
+                                <h1 class="second-header">1. Layered Pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern can be used to structure programs that can be decomposed into groups of subtasks, each of which is at a particular level of abstraction. Each layer provides services to the next higher layer.                                
+                                </p>
+                                <p class="general-content text-content mt-5">
+                                    The most commonly found 4 layers of a general information system are as follows.                                
+                                </p>
+                                <ul class="general-content text-content list remove-line-height">
+                                    <li><strong>Presentation layer</strong> (also known as <strong>UI layer )</strong></li>
+                                    <li><strong>Application layer</strong> (also known as <strong>service layer )</strong></li>
+                                    <li><strong>Business logic layer</strong> (also known as <strong>domain layer )</strong></li>
+                                    <li><strong>Data access layer</strong> (also known as <strong>persistence layer )</strong></li>
+                                </ul>
+                                <h3 class="third-header">Usage</h2>
+                                <ul class="general-content text-content list">
+                                    <li>General desktop applications.</li>
+                                    <li>E commerce web applications.</li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center">
+                                    <img alt="Image for post" class=""  src="https://miro.medium.com/max/376/1*jMWk_JqqyyloVPhTs_Zd1A.png" srcset="" sizes="188px">
+                                    <small class="text-muted">Layered Pattern</small>
+                                </div>
+                                <h1 class="second-header">2. Client-server pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern consists of two parties; a server and multiple clients. The server component will provide services to multiple client components. Clients request services from the server and the server provides relevant services to those clients. Furthermore, the server continues to listen to client requests.                                
+                                </p>
+                                <h3 class="third-header">Usage</h2>
+                                <ul class="general-content text-content list">
+                                    <li>Online applications such as email, document sharing and banking.
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class=""  src="https://miro.medium.com/max/284/1*4xX_WQQuD2u0PMK5bcWFkQ.png" srcset="https://miro.medium.com/max/276/1*4xX_WQQuD2u0PMK5bcWFkQ.png 276w, https://miro.medium.com/max/284/1*4xX_WQQuD2u0PMK5bcWFkQ.png 284w" sizes="284px">                                    
+                                    <small class="text-muted">Client-server pattern</small>
+                                </div>
+                                <h1 class="second-header">3. Master-slave pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern consists of two parties; master and slaves. The master component distributes the work among identical slave components, and computes a final result from the results which the slaves return.                                
+                                </p>
+                                <h3 class="third-header">Usage</h2>
+                                <ul class="general-content text-content list">
+                                    <li>
+                                        In database replication, the master database is regarded as the authoritative source, and the slave databases are synchronized to it.
+                                    </li>
+                                    <li>
+                                        Peripherals connected to a bus in a computer system (master and slave drives).                                    
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class="images"  src="https://miro.medium.com/max/542/1*lsK9QntZl2d5oLojwRGXDg.png" srcset="https://miro.medium.com/max/276/1*lsK9QntZl2d5oLojwRGXDg.png 276w, https://miro.medium.com/max/542/1*lsK9QntZl2d5oLojwRGXDg.png 542w" sizes="542px">                                    
+                                    <small class="text-muted">Master-slave pattern</small>
+                                </div>
+                                <h1 class="second-header">4. Pipe-filter pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern can be used to structure systems which produce and process a stream of data. Each processing step is enclosed within a filter component. Data to be processed is passed through <strong>pipes.</strong> These pipes can be used for buffering or for synchronization purposes.           
+                                </p>                     
+                                    <h3 class="third-header">Usage</h2>
+                                <ul class="general-content text-content list">
+                                    <li>
+                                        Compilers. The consecutive filters perform lexical analysis, parsing, semantic analysis, and code generation.
+                                    </li>
+                                    <li>
+                                        Workflows in bioinformatics.                                    
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class="images" src="https://miro.medium.com/max/796/1*qikehZcDhhl_wWsqeI_nvg.png" srcset="https://miro.medium.com/max/276/1*qikehZcDhhl_wWsqeI_nvg.png 276w, https://miro.medium.com/max/552/1*qikehZcDhhl_wWsqeI_nvg.png 552w, https://miro.medium.com/max/640/1*qikehZcDhhl_wWsqeI_nvg.png 640w, https://miro.medium.com/max/700/1*qikehZcDhhl_wWsqeI_nvg.png 700w" sizes="700px">
+                                    <small class="text-muted">Pipe-filter pattern</small>
+                                </div>
+                                <h1 class="second-header">5. Broker pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern is used to structure distributed systems with decoupled components. These components can interact with each other by remote service invocations. 
+                                    A <strong>broker</strong> component is responsible for the coordination of communication among <strong>components.</strong>
+                                </p> 
+                                <p class="general-content text-content mt-5">
+                                    Servers publish their capabilities (services and characteristics) to a broker. Clients request a service from the broker, and the broker then redirects the client to a suitable service from its registry.
+                                </p>                              
+                                <h3 class="third-header">Usage</h2>
+                                <ul class="general-content text-content list">
+                                    <li>
+                                        Message broker software such as <a href="#" class="page_anchor">Apache ActiveMQ</a>, <a href="#" class="page_anchor">Apache Kafka</a>, <a href="#" class="page_anchor">RabbitMQ</a> and <a href="#" class="page_anchor">JBoss Messaging</a>.
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class="images" src="https://miro.medium.com/max/1408/1*1qRQZjLRAd0yY_T9p2OgBw.png" srcset="https://miro.medium.com/max/552/1*1qRQZjLRAd0yY_T9p2OgBw.png 276w, https://miro.medium.com/max/1104/1*1qRQZjLRAd0yY_T9p2OgBw.png 552w, https://miro.medium.com/max/1280/1*1qRQZjLRAd0yY_T9p2OgBw.png 640w, https://miro.medium.com/max/1400/1*1qRQZjLRAd0yY_T9p2OgBw.png 700w" sizes="700px">
+                                    <small class="text-muted">Broker pattern</small>
+                                </div>
+                                <h1 class="second-header">6. Peer-to-peer pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    In this pattern, individual components are known as <strong>peers.</strong> 
+                                    Peers may function both as a <strong>client</strong>, requesting services from other peers, and as a <strong>server</strong>, providing services to other peers. 
+                                    A peer may act as a client or as a server or as both, and it can change its role dynamically with time.
+                                </p> 
+                                <h3 class="third-header">Usage</h2>
+                                <ul class="general-content text-content list">
+                                    <li>
+                                        File-sharing networks such as <a href="#" class="page_anchor">Gnutella</a> and <a href="#" class="page_anchor">G2</a>)
+                                    </li>
+                                    <li>
+                                        Multimedia protocols such as <a href="#" class="page_anchor">P2PTV</a> and <a href="#" class="page_anchor">PDTP</a>.
+                                    </li>
+                                    <li>
+                                        Cryptocurrency-based products such as <a href="#" class="page_anchor">Bitcoin</a> and <a href="#" class="page_anchor">Blockchain</a>
+                                    </li>
+                                    <li>
+                                        Message broker software such as <a href="#" class="page_anchor">Apache ActiveMQ</a>, <a href="#" class="page_anchor">Apache Kafka</a>, <a href="#" class="page_anchor">RabbitMQ</a> and <a href="#" class="page_anchor">JBoss Messaging</a>.
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class="" src="https://miro.medium.com/max/260/1*ROvkckSTw1UncrbQSmUJUQ.png" srcset="" sizes="260px">
+                                    <small class="text-muted">Peer-to-peer pattern</small>
+                                </div>
+                                <h1 class="second-header">7. Event-bus pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern primarily deals with events and has 4 major components; <strong>event source, event listener, channel</strong> and <strong>event bus.</strong> 
+                                    Sources publish messages to particular channels on an event bus. Listeners subscribe to particular channels. 
+                                    Listeners are notified of messages that are published to a channel to which they have subscribed before.
+                                </p> 
+                                <h3 class="third-header">Usage</h2>
+                                <ul class="general-content text-content list">
+                                    <li>
+                                        Android development
+                                    </li>
+                                    <li>
+                                        Notification services
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class="images" src="https://miro.medium.com/max/632/1*DOZ4nVR9zkJm-EnXT3KOGQ.png" srcset="https://miro.medium.com/max/276/1*DOZ4nVR9zkJm-EnXT3KOGQ.png 276w, https://miro.medium.com/max/552/1*DOZ4nVR9zkJm-EnXT3KOGQ.png 552w, https://miro.medium.com/max/632/1*DOZ4nVR9zkJm-EnXT3KOGQ.png 632w" sizes="632px">
+                                    <small class="text-muted">Event-bus pattern</small>
+                                </div>
+                                <h1 class="second-header">8. Model-view-controller pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern, also known as MVC pattern, divides an interactive application in to 3 parts as,
+                                </p> 
+                                <ol class="general-content text-content list">
+                                    <li><strong class="item">model</strong> — contains the core functionality and data</li>
+                                    <li><strong class="item">view</strong> — displays the information to the user (more than one view may be defined)</li>
+                                    <li><strong class="item">controller</strong> — handles the input from the user</li>
+                                </ol>
+                                <p class="general-content text-content mt-5">
+                                    This is done to separate internal representations of information from the ways information is presented to, and accepted from, the user. 
+                                    It decouples components and allows efficient code reuse.
+                                </p>
+                                <h3 class="third-header">Usage</h2>
+                                <ul class="general-content text-content list">
+                                    <li>
+                                        Architecture for World Wide Web applications in major programming languages.
+                                    </li>
+                                    <li>
+                                        Web frameworks such as <a href="#" class="page_anchor">Django</a> and <a href="#" class="page_anchor">Rails</a>.
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class="images" src="https://miro.medium.com/max/1582/1*OP0CS6O5Sb66jpc-H-IuRQ.png" srcset="https://miro.medium.com/max/552/1*OP0CS6O5Sb66jpc-H-IuRQ.png 276w, https://miro.medium.com/max/1104/1*OP0CS6O5Sb66jpc-H-IuRQ.png 552w, https://miro.medium.com/max/1280/1*OP0CS6O5Sb66jpc-H-IuRQ.png 640w, https://miro.medium.com/max/1400/1*OP0CS6O5Sb66jpc-H-IuRQ.png 700w" sizes="700px">
+                                    <small class="text-muted">Model-view pattern</small>
+                                </div>
+                                <h1 class="second-header">9. Blackboard pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern is useful for problems for which no deterministic solution strategies are known. 
+                                    The blackboard pattern consists of 3 main components.
+                                </p> 
+                                <ol class="general-content text-content list">
+                                    <li><strong class="item">blackboard</strong> — a structured global memory containing objects from the solution space</li>
+                                    <li><strong class="item">knowledge source</strong> — specialized modules with their own representation</li>
+                                    <li><strong class="item">control component</strong> — selects, configures and executes modules.</li>
+                                </ol>
+                                <p class="general-content text-content mt-5">
+                                    All the components have access to the blackboard. 
+                                    Components may produce new data objects that are added to the blackboard. 
+                                    Components look for particular kinds of data on the blackboard, and may find these by pattern matching with the existing knowledge source.
+                                </p>
+                                <h3 class="third-header">Usage</h3>
+                                <ul class="general-content text-content list">
+                                    <li>
+                                        Speech recognition
+                                    </li>
+                                    <li>
+                                        Vehicle identification and tracking
+                                    </li>
+                                    <li>
+                                        Protein structure identification
+                                    </li>
+                                    <li>
+                                        Sonar signals interpretation.
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class="images" width="530" height="299" src="https://miro.medium.com/max/530/1*ArbMx7A21I47llvwUTiSDg.png" srcset="https://miro.medium.com/max/276/1*ArbMx7A21I47llvwUTiSDg.png 276w, https://miro.medium.com/max/530/1*ArbMx7A21I47llvwUTiSDg.png 530w" sizes="530px">
+                                    <small class="text-muted">Blackboard pattern</small>
+                                </div>
+                                <h1 class="second-header">10. Interpreter pattern</h1>
+                                <p class="general-content text-content mt-5">
+                                    This pattern is used for designing a component that interprets programs written in a dedicated language. 
+                                    It mainly specifies how to evaluate lines of programs, known as sentences or expressions written in a particular language. 
+                                    The basic idea is to have a class for each symbol of the language.
+                                </p> 
+                                <h3 class="third-header">Usage</h3>
+                                <ul class="general-content text-content list">
+                                    <li>
+                                        Database query languages such as SQL.
+                                    </li>
+                                    <li>
+                                        Languages used to describe communication protocols.
+                                    </li>
+                                </ul>
+                                <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+                                    <img alt="Image for post" class="images" src="https://miro.medium.com/max/660/1*DrC3T5R4SsdcQY6aXLCRZA.png" srcset="https://miro.medium.com/max/276/1*DrC3T5R4SsdcQY6aXLCRZA.png 276w, https://miro.medium.com/max/552/1*DrC3T5R4SsdcQY6aXLCRZA.png 552w, https://miro.medium.com/max/640/1*DrC3T5R4SsdcQY6aXLCRZA.png 640w, https://miro.medium.com/max/660/1*DrC3T5R4SsdcQY6aXLCRZA.png 660w" sizes="660px">
+                                    <small class="text-muted">Interpreter pattern</small>
+                                </div>
+                                <h1 class="second-header">Comparison of Architectural Patterns</h1>
+                                <p class="general-content text-content mt-5">
+                                    The table given below summarizes the pros and cons of each architectural pattern.
+                                </p> 
+                        </div>
+                        <div class=" mt-5 d-flex justify-content-center">
+                            <img alt="Image for post" class="images" src="https://miro.medium.com/max/2880/1*Z9dKeyf6yi0nFMaUZF1P3Q.png" width="2880" srcset="https://miro.medium.com/max/276/1*Z9dKeyf6yi0nFMaUZF1P3Q.png 276w, https://miro.medium.com/max/552/1*Z9dKeyf6yi0nFMaUZF1P3Q.png 552w, https://miro.medium.com/max/640/1*Z9dKeyf6yi0nFMaUZF1P3Q.png 640w, https://miro.medium.com/max/728/1*Z9dKeyf6yi0nFMaUZF1P3Q.png 728w, https://miro.medium.com/max/816/1*Z9dKeyf6yi0nFMaUZF1P3Q.png 816w, https://miro.medium.com/max/904/1*Z9dKeyf6yi0nFMaUZF1P3Q.png 904w, https://miro.medium.com/max/992/1*Z9dKeyf6yi0nFMaUZF1P3Q.png 992w, https://miro.medium.com/max/1000/1*Z9dKeyf6yi0nFMaUZF1P3Q.png 1000w" sizes="1000px">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <small class="text-muted">Comparison of Architectural Patterns</small>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <p class="general-content text-content mt-5">
+                                Hope you found this article useful. I would love to hear your thoughts. 😇
+                            </p>
+                            <p class="general-content text-content mt-5">
+                                Thanks for reading. 😊
+                            </p>
+                            <p class="general-content text-content mt-5">
+                                Cheers! 😃
+                            </p> 
+                            <h1 class="second-header">References</h1>
+                            <a href="#" class="page_anchor mt-5">https://www.ou.nl/documents/40554/791670/IM0203_03.pdf/30dae517-691e-b3c7-22ed-a55ad27726d6</a>
+                            <div class="newsletter-container mt-5">
+                                <h2 class="newsletter-heading">Sign up for The Daily Pick</h2>
+                                <p class="newsletter-sub-heading">By Towards Data Science</small>
+                                <p style="margin-top: -30px;">
+                                    Hands-on real-world examples, research, tutorials, and cutting-edge techniques delivered Monday to Thursday. 
+                                    Make learning your daily ritual. <a href="#" class="page_anchor">Take a look</a>
+                                    <div class="d-flex justify-content-between newsletter-form">
+                                        <input type="email" placeholder="Your email" class="email-field">
+                                        <button class="btn btn-md newsletter">
+                                            <span class="icon-color" aria-hidden="true"><svg width="20" height="16" viewBox="0 0 20 16"><path d="M0 .35v15.3h20V.35H0zm6.95 9.38l3.05 2.5 3.05-2.5 4.88 4.73H2.07l4.88-4.73zM1.2 13.64V5.02l4.82 3.94-4.82 4.68zm12.78-4.68l4.82-3.94v8.62l-4.82-4.68zm4.82-7.42v1.94l-8.8 7.2-8.8-7.2V1.54h17.6z"></path></svg>
+                                            </span>
+                                            Get this newsletter</button>
+                                    </div>
+                                </p>
+                                <small class="text-muted newsletter-footer">
+                                    By signing up, you will create a Medium account if you don’t already have one. 
+                                    Review our <a href="#" class="newsletter_anchor">Privacy Policy</a> for more information about our privacy practices.
+                                </small>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 

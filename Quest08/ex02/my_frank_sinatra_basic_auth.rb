@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/reloader' if development?
 
 
-get '/protected/:username/:password' do
+get '/protected' do
     unless (params['username'] == 'admin') and (params['password'] == 'admin')
         halt 401, "Not authorized"
     end
@@ -11,3 +11,4 @@ end
 
 get '/' do
     "Everybody can see this page"
+end

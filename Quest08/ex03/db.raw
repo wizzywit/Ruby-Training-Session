@@ -1,1 +1,2 @@
-{"id"=>2, "firstname"=>"wisdom", "lastname"=>"praise", "age"=>24, "password"=>"Jesuschrist01", "email"=>"wisdompraise968@gmail.com"}
+{1=>{"firstname"=>"john", "lastname"=>"praise", "age"=>27, "password"=>"Password", "email"=>"email@mail.com"}}
+{2=>{"firstname"=>"wisdom", "lastname"=>"praise", "age"=>27, "password"=>"Password", "email"=>"email@mail.com"}}

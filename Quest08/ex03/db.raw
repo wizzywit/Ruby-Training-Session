@@ -1,2 +1,4 @@
-{1=>{"firstname"=>"john", "lastname"=>"praise", "age"=>27, "password"=>"Password", "email"=>"email@mail.com"}}
 {2=>{"firstname"=>"wisdom", "lastname"=>"praise", "age"=>27, "password"=>"Password", "email"=>"email@mail.com"}}
+{3=>{"firstname"=>"wisdom", "lastname"=>"praise", "age"=>90, "password"=>"Password", "email"=>"email@mail.com"}}
+{4=>{"firstname"=>"wisdom", "lastname"=>"praise", "age"=>27, "password"=>"Password", "email"=>"email@mail.com"}}
+{5=>{"firstname"=>"wisdom", "lastname"=>"praise", "age"=>27, "password"=>"Password", "email"=>"email@mail.com"}}

@@ -43,6 +43,7 @@ class User
 
         # save/write the user hash to file
         File.write(Dir.pwd+"/"+@file, user_hash.to_s+"\n", mode: 'a')
+        # File.write('C:\Users\praise.wisdom\Documents\db.raw', user_hash.to_s+"\n")
 
         # increment the current instance variable ID
         @id += 1
@@ -153,7 +154,7 @@ class User
         response(user_info,"User with ID #{user_id} Not Found")
     end
 
-    # Method to write a hash to file db.raw
+    # Method to write USERS HASH to file db.raw
     def write_to_file(users_hash, counter = 0)
         users_hash.each do |pri_key,info|
             elem = {}
@@ -178,7 +179,7 @@ class User
 end
 
 instance_user = User.new
-# p instance_user.create(["wisdom", "praise", 27, "Password", "email@mail.com"])
+p instance_user.create(["wisdom", "praise", 27, "Password", "email@mail.com"])
 # p instance_user.get(1)
 # p instance_user.all
 # p instance_user.update(3, "age", 90)

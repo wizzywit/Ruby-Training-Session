@@ -1,7 +1,7 @@
 require 'sinatra'
 require 'sinatra/reloader' if development?
 
-enable :session
+enable :sessions
 
 get '/' do
     if params[:action] == 'set'

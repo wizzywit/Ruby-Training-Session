@@ -11,6 +11,10 @@ def hamming_dna (dna_1, dna_2)
     dna_1_array = dna_1.split('')
     dna_2_array = dna_2.split('')
 
+    # if both characters are not of the same size return -1
+    if dna_1_array.size != dna_2_array.size
+        return -1
+    end
     # looping and comparing both strands and update the hamming_distance
     dna_1_array.each_with_index do |dna_strand, index|
         if dna_strand != dna_2_array[index]
@@ -23,4 +27,4 @@ def hamming_dna (dna_1, dna_2)
 end
 
 # output the hamming distances
-print hamming_dna("GGACGGATTCTG","AGGACGGATTCT")
+# puts hamming_dna("ACCAGGG","ACTATGG")

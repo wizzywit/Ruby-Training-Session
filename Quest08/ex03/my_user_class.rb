@@ -142,7 +142,7 @@ class User
             # if the user id is the one to be deleted, then skip that loop and add the
             # remaining users to the users info hash
             if user.keys[0] == user_id
-                user_info = {status: 0, message: "User ID: #{user_id} deleted successfully"}
+                user_info = {status: 0, message: "User ID: #{user_id} destroyed successfully"}
                 next
             else
                 users_info[user.keys[0]] = user[user.keys[0]]
@@ -178,8 +178,8 @@ class User
     end
 end
 
-instance_user = User.new
-p instance_user.create(["wisdom", "praise", 27, "Password", "email@mail.com"])
+# instance_user = User.new
+# p instance_user.create(["wisdom", "praise", 27, "Password", "email@mail.com"])
 # p instance_user.get(1)
 # p instance_user.all
 # p instance_user.update(3, "age", 90)

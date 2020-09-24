@@ -36,8 +36,14 @@ def roman_numerals(number)
     
     i = 12
     while number > 0
+        # assign the value after dividing by the current value in the map hash
+        # determined by the variable i(loop counter equivalent to the size of the hash)
         div = number / map[keys[i]]
+
+        # assign the remainder if any to variable number
         number = number.modulo(map[keys[i]])
+
+        # while the value stored in div is greater than
         while div > 0
             roman_numeral += keys[i]
             div -= 1

@@ -18,7 +18,7 @@ class MyFirstSelect
         counter = 0
 
         # read csv file and assigned to file local variable
-        file = CSV.read filename_db
+        file = CSV.parse(filename_db,liberal_parsing: :true, quote_char: "\"")
 
         # Iterate on every element/line in the file gotten
         file.each do |row|
@@ -50,5 +50,5 @@ class MyFirstSelect
 
 end
 
-class_instance = MyFirstSelect.new("nba_player_data.csv")
-p class_instance.where("name","Andre Brown")
+class_instance = MyFirstSelect.new(File.read("nba_player_data.csv"))
+p class_instance.where("name","Mahmoud Abdul-Rauf")

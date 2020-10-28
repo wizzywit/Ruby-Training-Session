@@ -3,7 +3,7 @@ class User
     # Initializing the class instance variables and update the next available ID
     def initialize
         @user = Hash.new
-        @file = "db.raw"
+        @file = "db.raw" 
         
 
         # read the last line of the db file
@@ -35,7 +35,7 @@ class User
             index == 2? @user[key_array[index]] = info.to_i : @user[key_array[index]] = info.strip
         end
 
-        # creates a hash of id => user_info
+        # creates a   of id => user_info
         user_hash[@id] = @user
 
         # hold the current saved user ID

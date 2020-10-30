@@ -42,6 +42,9 @@ class MyFirstSelect
         result = []
         @table.each do |row|
             if row[column_name] == criteria
+                search = row.values.join(",")
+                row = []
+                row << search
                 result << row
             end
         end
